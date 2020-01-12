@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Sat Dec 28 13:34:05 2019
+# Process ID: 14523
+# Current directory: /home/wallace/Projects/fpga/ip/bi_buff/bi_buff.runs/synth_1
+# Command line: vivado -log bi_buff.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bi_buff.tcl
+# Log file: /home/wallace/Projects/fpga/ip/bi_buff/bi_buff.runs/synth_1/bi_buff.vds
+# Journal file: /home/wallace/Projects/fpga/ip/bi_buff/bi_buff.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source bi_buff.tcl -notrace
