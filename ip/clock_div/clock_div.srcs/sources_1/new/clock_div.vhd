@@ -34,29 +34,20 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity clock_div is
     Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           dclk : out STD_LOGIC;
-           clk_buff: out STD_LOGIC_VECTOR(7 downto 0));
+           init : in STD_LOGIC;
+           dclk : out STD_LOGIC);
 end clock_div;
 
 architecture clock_divider of clock_div is
-    -- for DLatchs:
-    signal clks: UNSIGNED(7 downto 0);
-    
+    signal D : STD_LOGIC;
 begin
-    process(clk,reset)
+    process(clk,init)
     begin
-        if reset='1' then
-            clks <= "00000000";
-        elsif clk'EVENT and clk='1' then
-           clks(0) <= NOT clks(0);
-           for I in 0 to 7 loop
-                if RISING_EDGE(clks(I)) then
-                    clks(I+1) <= Not clks(I+1);         
-                end if;
-           end loop;   
+        if init='1' then
+           D <= '0';
+        elsif RISING_EDGE(clk) then
+           D <= NOT D;
+           dclk <= D;
         end if;
-        dclk <= clks(0);
-        clk_buff<=STD_LOGIC_VECTOR(clks);
     end process;
 end clock_divider;

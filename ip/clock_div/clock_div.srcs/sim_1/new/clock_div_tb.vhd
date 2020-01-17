@@ -38,17 +38,15 @@ end clock_div_tb;
 architecture clock_division_tb of clock_div_tb is
     component clock_div
     Port( clk: in STD_LOGIC;
-          reset : in STD_LOGIC;
-          dclk : out STD_LOGIC;
-          clk_buff: out STD_LOGIC_VECTOR(7 downto 0)
+          init : in STD_LOGIC;
+          dclk : out STD_LOGIC
     );
     end component;
     
     -- for port mapping
     signal clk : STD_LOGIC;
-    signal reset : STD_LOGIC;
+    signal init : STD_LOGIC;
     signal dclk : STD_LOGIC;
-    signal clk_buff : STD_LOGIC_VECTOR(7 downto 0);
         
     -- for clocking
     constant clock_period: time := 10 ns;
@@ -57,16 +55,15 @@ architecture clock_division_tb of clock_div_tb is
 begin
 uut : clock_div port map(
     clk=> clk,
-    reset =>reset,
-    dclk => dclk,
-    clk_buff => clk_buff
+    init =>init,
+    dclk => dclk
     );
 
 stimulus: process     
   begin
-    reset<='1';
+    init<='1';
     wait for 10 ns;
-    reset<='0';
+    init<='0';
     wait for 1000 ns;
   end process;
   -- clocking process

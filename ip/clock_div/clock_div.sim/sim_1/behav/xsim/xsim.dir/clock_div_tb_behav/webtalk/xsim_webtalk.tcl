@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri Jan 17 01:30:10 2020" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sat Jan 18 00:06:23 2020" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.2.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2729669" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,19 +14,19 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "4b9e7a02-f0de-4fe7-8b81-454f80a90f81" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "9f825cd37dfa4a5091e3b2af3fe142cf" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "51" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "55" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Fedora" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Fedora release 29 (Twenty Nine)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "2594.016 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "2594.015 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "95 ns" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.05_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "115144_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1626414111 -regid "211866014_0_0_506" -xml /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Memory -value "115140_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3320910690 -regid "211866014_0_0_506" -xml /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

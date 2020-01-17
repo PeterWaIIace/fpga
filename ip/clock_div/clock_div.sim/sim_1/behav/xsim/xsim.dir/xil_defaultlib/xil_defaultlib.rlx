@@ -2,5 +2,7 @@
 2019.2
 Dec  5 2019
 04:51:02
-/home/wallace/Projects/fpga/ip/clock_div/clock_div.srcs/sim_1/new/clock_div_tb.vhd,1579220793,vhdl,,,,clock_div_tb,,,,,,,,
-/home/wallace/Projects/fpga/ip/clock_div/clock_div.srcs/sources_1/new/clock_div.vhd,1579221008,vhdl,,,,clock_div,,,,,,,,
+/home/wallace/Projects/fpga/ip/clock_div/clock_div.srcs/sim_1/new/N_clock_div_tb.vhd,1579301275,vhdl,,,,n_clock_div_tb,,,,,,,,
+/home/wallace/Projects/fpga/ip/clock_div/clock_div.srcs/sim_1/new/clock_div_tb.vhd,1579222357,vhdl,,,,clock_div_tb,,,,,,,,
+/home/wallace/Projects/fpga/ip/clock_div/clock_div.srcs/sources_1/new/N_clock_div.vhd,1579298383,vhdl,,,,n_clock_div,,,,,,,,
+/home/wallace/Projects/fpga/ip/clock_div/clock_div.srcs/sources_1/new/clock_div.vhd,1579222421,vhdl,,,,clock_div,,,,,,,,
