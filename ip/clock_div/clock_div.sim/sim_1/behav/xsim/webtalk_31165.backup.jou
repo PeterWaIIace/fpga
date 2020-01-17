@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed Jan 15 15:18:39 2020
+# Process ID: 31165
+# Current directory: /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/wallace/Projects/fpga/ip/clock_div/clock_div.sim/sim_1/behav/xsim/xsim.dir/clock_div_tb_behav/webtalk/xsim_webtalk.tcl -notrace

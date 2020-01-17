@@ -1,0 +1,16 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/wallace/programs/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 9f825cd37dfa4a5091e3b2af3fe142cf --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot clock_div_tb_behav xil_defaultlib.clock_div_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture clock_divider of entity xil_defaultlib.clock_div [clock_div_default]
+Compiling architecture clock_division_tb of entity xil_defaultlib.clock_div_tb
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
