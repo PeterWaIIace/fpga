@@ -1,4 +1,4 @@
-Running: xsim.dir/ping_pong_tb_behav/xsimk -simmode gui -wdb ping_pong_tb_behav.wdb -simrunnum 0 -socket 38079
+Running: xsim.dir/ping_pong_tb_behav/xsimk -simmode gui -wdb ping_pong_tb_behav.wdb -simrunnum 0 -socket 52777
 Design successfully loaded
-Design Loading Memory Usage: 33424 KB (Peak: 33544 KB)
+Design Loading Memory Usage: 33428 KB (Peak: 33548 KB)
 Design Loading CPU Usage: 40 ms

@@ -74,16 +74,22 @@ uut: bi_buff port map(clk => buff_clk,
                 buff_state => LED);             
     process(clk)
     begin
+    -- init state 0000
+    -- buff init 1000
         if clk'EVENT then
             if state="0000" then 
             -- start new game
-                D <= '1';
                 drctn <= '0';
-                buff_clk <= clk; 
+                buff_clk <= clk;
+                D<='1';
+                state <= "1000";
+            elsif state="1000" then
+                buff_clk <= clk;
+                D<='1';
                 state <= "0001";
             elsif state="0001" then
             -- game is on
-                D <= '1';
+                D <= '0';
                 buff_clk <= clk;
                 drctn <= '0'; 
                 if button1='1' and LED="00000001" then
