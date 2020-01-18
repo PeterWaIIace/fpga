@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/wallace/Projects/fpga/ip/ping_pong/ping_pong.srcs/sources_1/new/ping_pong.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ping_pong'

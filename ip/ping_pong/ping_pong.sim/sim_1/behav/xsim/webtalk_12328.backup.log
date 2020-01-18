@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Sat Jan 18 02:43:13 2020
+# Process ID: 12328
+# Current directory: /home/wallace/Projects/fpga/ip/ping_pong/ping_pong.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/wallace/Projects/fpga/ip/ping_pong/ping_pong.sim/sim_1/behav/xsim/xsim.dir/ping_pong_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/wallace/Projects/fpga/ip/ping_pong/ping_pong.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/wallace/Projects/fpga/ip/ping_pong/ping_pong.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/wallace/Projects/fpga/ip/ping_pong/ping_pong.sim/sim_1/behav/xsim/xsim.dir/ping_pong_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Jan 18 02:43:14 2020...

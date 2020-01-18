@@ -36,7 +36,11 @@ entity ping_pong is
     Port ( clk : in STD_LOGIC;
            button1 : in STD_LOGIC;
            button2 : in STD_LOGIC;
-           display : out UNSIGNED(7 downto 0));
+           display : out UNSIGNED(7 downto 0);
+           -- debug interface
+           output_state : out STD_LOGIC_VECTOR(3 downto 0);
+           Dout : out STD_LOGIC
+           );
 end ping_pong;
 
 architecture game of ping_pong is
@@ -56,33 +60,43 @@ architecture game of ping_pong is
     signal Q : STD_LOGIC; 
     
     -- for state machine 
-    signal state : STD_LOGIC_VECTOR(3 downto 0);
+    signal state : STD_LOGIC_VECTOR(3 downto 0) := "0000";
+    
+    -- for scoring a players
+    signal scoring_P1 : STD_LOGIC;
+    signal scoring_P2 : STD_LOGIC;
     
 begin
 uut: bi_buff port map(clk => buff_clk,
                 drctn => drctn,
                 D => D,
                 Q => Q,
-                buff_state => LED);
-                
+                buff_state => LED);             
     process(clk)
     begin
-        if clk'EVENT and clk='1' then
+        if clk'EVENT then
             if state="0000" then 
             -- start new game
                 D <= '1';
-                buff_clk <= clk;
+                drctn <= '0';
+                buff_clk <= clk; 
                 state <= "0001";
-            elsif state ="0001" then
-            -- game is on 
+            elsif state="0001" then
+            -- game is on
+                D <= '1';
+                buff_clk <= clk;
+                drctn <= '0'; 
                 if button1='1' and LED="00000001" then
                     drctn <= '1';
                     buff_clk <= clk;
-                elsif button1='1' and LED="00000001" then
+                elsif button2='1' and LED="10000000" then
                     drctn <= '0';
                     buff_clk <= clk;
                 end if;
             end if;
+            display <= LED;
+            output_state <= state;
+            Dout <= D;
         end if;
     end process;
 end game;

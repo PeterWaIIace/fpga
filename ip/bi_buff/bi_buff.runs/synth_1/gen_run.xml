@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-3" LaunchTime="1577536442">
-  <File Type="VDS-TIMING-PB" Name="bi_buff_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="bi_buff_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="bi_buff.tcl"/>
+  <File Type="REPORTS-TCL" Name="bi_buff_reports.tcl"/>
+  <File Type="RDS-RDS" Name="bi_buff.vds"/>
   <File Type="RDS-DCP" Name="bi_buff.dcp"/>
   <File Type="RDS-UTIL-PB" Name="bi_buff_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="bi_buff_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="bi_buff_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="bi_buff.vds"/>
-  <File Type="REPORTS-TCL" Name="bi_buff_reports.tcl"/>
-  <File Type="PA-TCL" Name="bi_buff.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/bi_buff.vhd">
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
